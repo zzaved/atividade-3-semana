@@ -34,13 +34,25 @@ Relações:<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Seguindo para a tabela de personalizações do mascote da plataforma, o Oppo, tem-se o armazenamento dos registros de todas as customizações do carangueijo, separados entre os ids `acessorio_rosto`, `acessorio-garra` e `acessorio-topo-da-cabeca`, representando diferentes tipos de personalizações.<br>
 
+Relações:<br>
+
+- **Usuários para Oppo (1:1):** Uma personalização de um Oppo pode ter um usuário<br>
+
 #### Tabela de Organizações:
 
 &nbsp;&nbsp;&nbsp;&nbsp;Na tabela de organizações, temos o `id`, o identificador de uma organização específica, que será responsável por armazenar os dados daquela Organização da Sociedade Civil da plataforma. Assim, é nesse espaço que iremos encontrar, além da sua chave primária, os campos de preenchimento: `nome`, `data-de-fundacao`, `localizacao`, o booleano se ela aceita voluntários ou não `aceita-voluntarios`, e também recebe como chave estrangeira o `id-usuários` do usuário que criou a página daquela organização. <br>
 
+Relações:<br>
+
+- **Organizações para Usuários (N:1):** Várias organizações podem estar presentes dentro de um perfil de um usuário</br>
+
 #### Tabela de Publicações:
 
 &nbsp;&nbsp;&nbsp;&nbsp;A tabela de publicações é responsável por armazenar os dados das publicações feitas na plataforma, incluindo o `titulo`, o `texto` e a presença de algum `anexo`, como uma imagem. <br>
+
+Relações:<br>
+
+- **Publicações para usuários (N:N):** Por meio de uma tabela `post-colaborativos`, várias publicações podem pertencer ao mesmo tempo de várias perfis de usuários. Esse estilo de planilha foi baseado nas postagens colaborativas da plataforma Instagram.<br>
 
 #### Tabela de Publicações colaborativas:
 
