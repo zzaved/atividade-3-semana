@@ -12,7 +12,7 @@
 
 <sub>Figura 1 - Diagrama do banco de dados</sub>
 
-<img src="DIAGRAMA.png" width="100%" >
+<img src="assets/DIAGRAMA.png" width="100%" >
 
 <sup>Fonte: Material produzido pelo autor (2024)</sup>
 
@@ -52,7 +52,7 @@ Relações:<br>
 
 Relações:<br>
 
-- **Publicações para usuários (N:N):** Por meio de uma tabela `post-colaborativos`, várias publicações podem pertencer ao mesmo tempo de várias perfis de usuários. Esse estilo de planilha foi baseado nas postagens colaborativas da plataforma Instagram.<br>
+- **Publicações para usuários (N:N):** Por meio de uma tabela `post-colaborativos`, uma publicação pode pertencer ao mesmo tempo de várias perfis de usuários. Esse estilo de planilha foi baseado nas postagens colaborativas da plataforma Instagram.<br>
 
 #### Tabela de Publicações colaborativas:
 
