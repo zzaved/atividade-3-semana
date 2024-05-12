@@ -44,7 +44,7 @@ Relações:<br>
 
 Relações:<br>
 
-- **Organizações para Usuários (N:1):** Várias organizações podem estar presentes dentro de um perfil de um usuário</br>
+- **Organizações para Usuários (1:1):** Uma organização pode ter só um usuário por vez</br>
 
 #### Tabela de Publicações:
 
